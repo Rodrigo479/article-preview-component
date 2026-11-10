@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="./style.css" rel="stylesheet" />
+  <script defer src="./main.js"></script>
+  <title>Frontend Mentor | Article preview component</title>
+
+</head>
+
+<body>
+  <main class="main">
+    <article class="main__article">
+      <img class="main__article-pic" src="./images/drawers.jpg" alt="Image of a drawer" />
+      <div class="main__article-wrapper">
+        <h1 class="main__article-title">
+          Shift the overall look and feel by adding these wonderful
+          touches to furniture in your home
+        </h1>
+        <p class="main__article-para">
+          Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.
+        </p>
+        <div id="main__article-author" class="main__article-author">
+          <img class="main__article-avatar" src="./images/avatar-michelle.jpg" alt="Avatar of Michelle Appleton" data-toggle="show" />
+          <div class="main__article-author-info" data-toggle="show">
+            <p class="main__article-author-name">Michelle Appleton</p>
+            <time class="main__article-date" datetime="2020-06-28" title="June 28th, 2020">28 Jun 2020</time>
+          </div>
+          <div class="main__article-social-media" data-toggle="hide">
+            <div class="main__article-social-media-wrapper" data-toggle="hide">
+              <p class="main__article-share">Share</p>
+              <a href="https://www.facebook.com/" aria-label="Facebook">
+                <img class="main__article-social-media-icon" src="./images/icon-facebook.svg" alt="" />
+              </a>
+              <a href="https://twitter.com/" aria-label="Twitter">
+                <img class="main__article-social-media-icon" src="./images/icon-twitter.svg" alt="" />
+              </a>
+              <a href="https://www.pinterest.com/" aria-label="Pinterest">
+                <img class="main__article-social-media-icon" src="./images/icon-pinterest.svg" alt="" />
+              </a>
+            </div>
+            <button id="main__article-share-button" class="main__article-share-button" data-toggle="hide" aria-label="Share article" aria-expanded="false">
+              <img src="./images/icon-share.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Rodrigo479" target="_blank" rel="noopener noreferrer">Rodrigo</a>.
+  </footer>
+</body>
+
+</html>
