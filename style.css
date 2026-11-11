@@ -17,10 +17,24 @@
 }
 
 :root {
+    /* colors */
     --grey-900: #48556A;
     --grey-500: #6E8098;
     --grey-400: #9DAEC2;
     --grey-200: #ECF2F8;
+
+    /* font size */
+    --large: 20px;
+    --medium: 13px;
+
+    /* line height */
+    --medium-lh: 130%;
+    --large-lh: 140%;
+    
+    /* letter spacing */
+    --medium-ls: 0.25px;
+    --small-ls: 0.12px;
+    --large-ls: 25%;
 }
 
 *,
@@ -119,7 +133,7 @@ body {
 .main__article-social-media-wrapper[data-toggle="show"] {
     display: flex;
     gap: 20px;
-    align-items:flex-start;
+    align-items: flex-start;
 }
 
 .main__article-social-media-icon {
@@ -145,42 +159,42 @@ body {
 
 .main__article-title {
     font-family: 'ManropeBold';
-    font-size: 20px;
-    line-height: 130%;
-    letter-spacing: 0.25px;
+    font-size: var(--large);
+    line-height: var(--medium-lh);
+    letter-spacing: var(--medium-ls);
     color: var(--grey-900);
 }
 
 .main__article-para {
     font-family: 'ManropeMedium';
-    font-size: 13px;
-    line-height: 140%;
-    letter-spacing: 0.12px;
+    font-size: var(--medium);
+    line-height: var(--large-lh);
+    letter-spacing: var(--small-ls);
     color: var(--grey-500);
 }
 
 .main__article-author-name {
     font-family: 'ManropeBold';
-    font-size: 13px;
-    line-height: 140%;
-    letter-spacing: 0.12px;
+    font-size: var(--medium);
+    line-height: var(--large-lh);
+    letter-spacing: var(--small-ls);
     color: var(--grey-900);
 }
 
 .main__article-date {
     font-family: 'ManropeMedium';
-    font-size: 13px;
-    line-height: 140%;
-    letter-spacing: 0.12px;
+    font-size: var(--medium);
+    line-height: var(--large-lh);
+    letter-spacing: var(--small-ls);
     color: var(--grey-400);
 }
 
 .main__article-share {
     text-transform: uppercase;
     font-family: 'Manrope';
-    font-size: 13px;
-    line-height: 140%;
-    letter-spacing: 25%;
+    font-size: var(--medium);
+    line-height: var(--large-lh);
+    letter-spacing: var(--large-ls);
     color: var(--grey-400);
 }
 
