@@ -96,14 +96,18 @@ body {
     border: 0;
 }
 
+.main__article-share-button[data-toggle="show"] {
+    background: var(--grey-500);
+}
+
 .main__article-share-button[data-toggle="show"] .arrow {
-    color: white;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(157deg) brightness(102%) contrast(104%);
 }
 
 .main__article-author-info[data-toggle="show"] {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    margin-inline-start: 16px;
 }
 
 .main__article-avatar[data-toggle="hide"],
@@ -115,7 +119,7 @@ body {
 .main__article-social-media-wrapper[data-toggle="show"] {
     display: flex;
     gap: 20px;
-    align-items: center;
+    align-items:flex-start;
 }
 
 .main__article-social-media-icon {
@@ -136,7 +140,7 @@ body {
     padding: 30px;
     background: var(--grey-900);
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .main__article-title {
@@ -207,13 +211,15 @@ body {
     .main__article-author-info[data-toggle="hide"] {
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        padding-inline-start: 16px;
     }
 
     .main__article-social-media[data-toggle="show"] {
         position: relative;
         width: fit-content;
         margin: 0;
+        border: 0;
+        padding: 0;
         margin-left: auto;
         background: white;
     }
@@ -221,23 +227,25 @@ body {
     .main__article-social-media-wrapper[data-toggle="show"] {
         position: absolute;
         z-index: 2;
-        top: -40px;
-        left: -124px;
+        top: -92px;
+        right: -95px;
         width: 248px;
         background: var(--grey-900);
         justify-content: center;
         border-radius: 10px;
         margin: 0;
+        padding: 18px 39px;
     }
 
     .main__article-share-button[data-toggle="show"]::after {
         display: block;
         content: '';
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         position: absolute;
         z-index: 1;
-        top: -35px;
+        top: -40px;
+        left: 5px;
         transform: rotate(45deg);
         background: var(--grey-900);
     }
